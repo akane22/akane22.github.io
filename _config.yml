@@ -7,6 +7,7 @@
 
 # Site Settings
 minimal_mistakes_skin: air   # try: air, mint, contrast, dark
+dark_theme_toggle: false
 locale                   : "en-US"
 title                    : "Alex Kane"
 title_separator          : "-"

@@ -4,16 +4,38 @@ permalink: /
 author_profile: false
 ---
 
-<!-- This wrapper guarantees centering on the homepage -->
-<div class="home-hero-wrap" style="max-width: 840px; margin: 0 auto;">
+<style>
+.home-content {
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+  max-width: 900px;
+}
 
-  <div class="home-hero">
-    <img src="{{ '/images/headshot.jpg' | relative_url }}" alt="Alex Kane" class="home-hero__photo">
-    <div class="home-hero__text">
-      <p>Welcome! I am a 4th year PhD student in economics at Boston University. My research interests are in Economic History, Applied Microeconomics, and Labor Economics.</p>
+.home-content img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
 
-      <p>You can reach me at alexkane@bu.edu</p>
-    </div>
+.home-content .text {
+  flex: 1;
+}
+
+@media (max-width: 768px) {
+  .home-content {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+</style>
+
+<div class="home-content">
+  <img src="/images/headshot.jpg" alt="Alex Kane">
+  <div class="text">
+    <p>Welcome! I am a 4th year PhD student in economics at Boston University. My research interests are in Economic History, Applied Microeconomics, and Labor Economics.</p>
+    <p>You can reach me at <a href="mailto:alexkane@bu.edu">alexkane@bu.edu</a>.</p>
   </div>
-
 </div>
